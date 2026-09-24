@@ -11,3 +11,6 @@ Inspired by Noita.
 
 - SDL3
 - Box2d
+- Lua
+- Sol2
+- vcpkg
