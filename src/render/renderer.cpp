@@ -1,4 +1,4 @@
-#include "renderer.h"
+#include "Renderer.h"
 
 bool Renderer::Init(RendererConfig& rendererConfig) {
 
@@ -33,7 +33,7 @@ bool Renderer::Init(RendererConfig& rendererConfig) {
 }
 
 bool Renderer::CreateTexture() {
-	m_texture = SDL_CreateTexture(m_renderer, SDL_PIXELFORMAT_RGBA32, SDL_TEXTUREACCESS_STREAMING, m_gridWidth, m_gridHeight);
+	m_texture = SDL_CreateTexture(m_renderer, SDL_PIXELFORMAT_ABGR8888, SDL_TEXTUREACCESS_STREAMING, m_gridWidth, m_gridHeight);
 
 	if (!m_texture) {
 		std::cout << "SDL_CreateTexture failed: " << SDL_GetError() << std::endl;

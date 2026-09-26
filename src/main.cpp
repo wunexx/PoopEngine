@@ -1,12 +1,12 @@
 #include <iostream>
-#include "core/engine.h"
+#include "core/Engine.h"
 
 int main(int argc, char** argv){
     RendererConfig config = { 1280, 720, 4, "Poop Engine" };
-    Engine engine(config);
+    Engine engine(config, 100.0);
     engine.Run();
 
-    std::cout << "end" << std::endl;
+    std::cout << "End of life" << std::endl;
 
     return 0;
 }
